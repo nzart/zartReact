@@ -1,0 +1,56 @@
+@import "components/__components";
+@import "pages/__pages";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.wrapper {
+  margin: 2rem auto;
+  max-width: 75%;
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    max-width: 85%;
+  }
+}
+
+.Herogallery {
+  display: flex;
+  margin: 4rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.hello {
+  margin: 0 0 2rem 0;
+  width: 50%;
+}
+
+.heroText {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 72px;
+  }
+  h1, h2 {
+    opacity: 0;
+    transform: skewX(45deg);
+  }
+}
+
+.heroImg {
+  width: 100%;
+}

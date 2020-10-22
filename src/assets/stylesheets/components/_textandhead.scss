@@ -1,0 +1,14 @@
+.port_text {
+    border-top: 2px solid rgb(173, 18, 166);
+    padding: 5rem 0 5rem 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    // opacity: 0;
+    h1, p {
+        margin: 0;
+        // opacity: 0;
+    }
+    @media (max-width: 500px) {
+        grid-template-columns: 100%;
+    }
+}
