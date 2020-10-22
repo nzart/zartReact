@@ -13,14 +13,10 @@ import templehome from 'assets/images/homepage/temple.png';
 import corhome from 'assets/images/homepage/corthumb.png';
 import abouthome from 'assets/images/homepage/about.png';
 import contact from 'assets/images/homepage/contact.png';
-import { func } from 'prop-types';
+// import { func } from 'prop-types';
 
 
 const IndexPage = () => {
-
-  window.onload = function() {
-
-  
 
   useEffect(() => {
     gsap.timeline()
@@ -43,7 +39,7 @@ const IndexPage = () => {
     )
   })
 
-}
+
 
 
   return (
