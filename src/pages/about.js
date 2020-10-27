@@ -53,7 +53,7 @@ const Aboutpage = () => {
             <p>Dream big, work your ass off.</p>
             </section>
 
-            <img className="me" src={Me} alt="Me" />
+            <img className="me" src={Me} alt="Me" resizeMode='contain' />
 
             </div>  
           
