@@ -2,6 +2,7 @@
 @import "pages/__pages";
 
 body {
+  visibility: hidden;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
@@ -56,4 +57,18 @@ a {
 
 .heroImg {
   width: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #BC8CF3;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 0 auto;
+    opacity: 1;
+  }
 }

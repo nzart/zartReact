@@ -6,6 +6,7 @@ import gsap, { Power3 } from 'gsap';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Herocard from '../components/Herocard';
+import Introoverlay from '../components/Introoverlay'
 
 import hello from 'assets/images/hello.svg';
 import travelhome from 'assets/images/homepage/travelerredux.png';
@@ -18,7 +19,43 @@ import contact from 'assets/images/homepage/contact.png';
 
 const IndexPage = () => {
 
+  gsap.to("body", { duration:0, css: { visibility: "visible" } });
+
   useEffect(() => {
+    gsap.timeline()
+    .to('.introtitle', {
+      // duration: .6,
+      opacity: 0,
+      y: -70,
+      delay: .6,
+      skewY: -10,
+      ease: Power3.out
+    })
+    .to('.overlay', {
+      height: 0,
+      duration: .6,
+      // delay: 1,
+      ease: Power3.out
+    }) 
+    .from('.indexAni', {
+      skewX: '45deg',
+      delay: .4,
+      y: 20,
+      duration: .5,
+      opacity: 0,
+      ease: Power3.out
+    })
+    .from('.Herogallery',
+      {
+        y: 100,
+        duration: .6,
+        opacity: 0,
+        delay: .2
+      }
+    )
+  })
+
+  /* useEffect(() => {
     gsap.timeline()
     .from('.indexAni', {
       skewX: '45deg',
@@ -37,18 +74,23 @@ const IndexPage = () => {
         delay: .2
       }
     )
-  })
+  }) */
 
 
 
 
   return (
+    
+
     <Layout pageName="home">
+      <Introoverlay/>
       <Helmet>
         <title>Home Page</title>
       </Helmet>
 
+
       <Container>
+
         <div className="wrapper">
         
           <img className="hello indexAni" src={hello} alt="hello" />
