@@ -16,10 +16,6 @@ import abouthome from 'assets/images/homepage/about.png';
 import contact from 'assets/images/homepage/contact.png';
 // import { func } from 'prop-types';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-142236474-2'); // add your tracking id here.
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 const IndexPage = () => {
 
