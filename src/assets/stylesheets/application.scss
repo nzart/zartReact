@@ -2,13 +2,14 @@
 @import "pages/__pages";
 
 body {
-  visibility: hidden;
+  // visibility: hidden;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
 }
 
 .wrapper {
+  // visibility: hidden;
   margin: 2rem auto;
   max-width: 75%;
   @media (max-width: 768px) {

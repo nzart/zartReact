@@ -4,7 +4,7 @@ import gsap, {Power3} from 'gsap'
 
 const Herotext = (props) => {
 
-  gsap.to("body", { duration:0, css: { visibility: "visible" } });
+  // gsap.from(".wrapper", { duration:0, css: { visibility: "hidden" } });
 
   useEffect(() => {
     gsap.timeline()
