@@ -29,7 +29,7 @@ const CORPage = () => {
 
         <div className="wrapper">  
 
-          <Textandhead head="Crown Of Red" para="Coffee, community, culture. Crown of Red is a coffee shop serving for the people. An artisan coffee shop without the air of superiority. It is meant to be a place of social gathering where friends can have a good time and the communicty can come together for a greater purpose." />
+          <Textandhead head="Crown Of Red" para="Coffee, community, culture. Crown of Red is a coffee shop serving for the people. An artisan coffee shop without the air of superiority. It is meant to be a place of social gathering where friends can have a good time and the community can come together for a greater purpose." />
 
         </div>
 
