@@ -15,7 +15,7 @@ const Herocard = (props) => {
                 {/* <h2>Hello</h2> */}
 
                 
-                <h2>{props.title}</h2>
+                <h3>{props.title}</h3>
                 <p>{props.desc}</p>
             </div>
             

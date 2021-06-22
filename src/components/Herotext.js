@@ -11,15 +11,15 @@ const Herotext = (props) => {
     //Set TimeOut
     const timer = setTimeout(() => {
       gsap.timeline()
-    .to(
-      '.heroText',
-      {
-        height: '50vh',
-        delay: .4,
-        duration: .5,
-        ease: Power3.ease
-      }
-    )
+    // .to(
+    //   '.heroText',
+    //   {
+    //     height: '50vh',
+    //     delay: .4,
+    //     duration: .5,
+    //     ease: Power3.ease
+    //   }
+    // )
     .to(
       '.mainItem',
       {
@@ -31,7 +31,7 @@ const Herotext = (props) => {
         ease: Power3.easeOut,
       }
     )
-    }, 2000);
+    }, 500);
     return () => clearTimeout(timer)
 
 

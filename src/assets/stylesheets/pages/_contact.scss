@@ -1,11 +1,10 @@
-.flexgrowthing {
+/* .flexgrowthing {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // flex-grow: 1;
-}
+} */
 
-.contact {
+/* .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,5 +16,28 @@
         text-decoration: underline;
         // padding-bottom: 3rem;
     }
-}
+} */
 
+/* .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.25rem;
+    @media (max-width: 425px) {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+} */
+
+
+.contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 425px) {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+}

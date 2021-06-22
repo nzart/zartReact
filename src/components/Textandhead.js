@@ -6,7 +6,7 @@ const Textandhead = (props) => {
 
     <div className="port_text">
 
-      <h1>{props.head}</h1>
+      <h3>{props.head}</h3>
       <p>{props.para}</p>
 
     </div>

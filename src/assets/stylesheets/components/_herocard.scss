@@ -7,7 +7,8 @@
   transition: all .3s cubic-bezier(.65,.05,.36,1);
   
   &:hover {
-    box-shadow: 6px 12px 4px rgba(5, 5, 5, 0.25);
+    box-shadow: 12px 12px 0px #BC8CF3;
+    // box-shadow: 6px 12px 4px rgba(5, 5, 5, 0.25);
   }
   @media (max-width: 768px) {
     width: calc(50% - .5rem);
@@ -26,17 +27,14 @@
 
   .card_desc {
     overflow: hidden;
-    padding: .5em 1em;
+    padding: .5rem .25rem;
 
     @media (max-width: 425px) {
-      padding: .5em 0;
+      padding: .5rem 0;
     }
   }
-  h1 {
+  h3 {
     margin: 0 0 .25em 0;
-  }
-  h2 {
-    margin: 0 0 .25rem 0;
   }
   p {
     margin: 0;

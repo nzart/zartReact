@@ -37,7 +37,7 @@ const Aboutpage = () => {
       <Container>
         <div className="wrapper">
 
-          <img className="hello aboutAni" src={About} alt="About" />
+          <img className="otherhello aboutAni" src={About} alt="About" />
 
             <h2 className="aboutAni">Designer. Developer. Runner. Coffee nerd.</h2>
 
