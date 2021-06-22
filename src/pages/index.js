@@ -6,7 +6,7 @@ import gsap, { Power3 } from 'gsap';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Herocard from '../components/Herocard';
-// import Introoverlay from '../components/Introoverlay'
+import Introoverlay from '../components/Introoverlay'
 
 import hello from 'assets/images/hello.svg';
 import perfpackhome from 'assets/images/homepage/perfpack.png';
@@ -24,7 +24,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     gsap.timeline()
-    /* .to('.introtitle', {
+    .to('.introtitle', {
       // duration: .6,
       opacity: 0,
       y: -70,
@@ -37,7 +37,7 @@ const IndexPage = () => {
       duration: .6,
       // delay: 1,
       ease: Power3.out
-    }) */ 
+    }) 
     .from('.indexAni', {
       skewX: '45deg',
       delay: .4,
@@ -60,7 +60,7 @@ const IndexPage = () => {
     
 
     <Layout pageName="home">
-      {/* <Introoverlay/> */}
+      <Introoverlay/>
       <Helmet>
         <title>Home Page</title>
       </Helmet>
